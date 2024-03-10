@@ -44,6 +44,13 @@ export class Authwrite{
             console.log("no user present here !!!!")
         }
     }
+    async logout(){
+        try {
+            return await this.account.deleteSessions()
+        } catch (error) {
+            console.log("oops!! we encountered a error",error)
+        }
+    }
 }
 
 const authWrite = new Authwrite()
