@@ -9,8 +9,8 @@ export class DatabaseService{
     this.client
     .setEndpoint(conf.appwrite_url)
     .setProject(conf.appwrite_projectid)
-    this.databases= new Databases()
-    this.Bucket= new Storage()
+    this.databases= new Databases(this.client)
+    this.Bucket= new Storage(this.client)
 }
     async createPost({Title, slug, Content, Image,Status, userid})
     {
@@ -26,9 +26,6 @@ export class DatabaseService{
             throw error;
         }
     }
-
-
-
 
     async updatePost(slug,{Title,Content,Image, Status}){
         try {
@@ -47,9 +44,9 @@ export class DatabaseService{
         try {
             return await this.databases.deleteDocument(
                 conf.appwrite_databaseid,conf.appwrite_collectionid,slug
-            )
-            return true
-        } catch (error) {
+                )
+        } 
+        catch (error) {
             throw error
                
         }
@@ -74,7 +71,16 @@ export class DatabaseService{
             return error
         }
     }
+    //File upload
+    // async uploadFile({slug}){
+    //     try {
+    //         return await this.
+    //     } catch (error) {
+    //         console.error("failed to upload!!")
+    //         return false
+    //     }
 
+    // }
 
 
 }
@@ -82,6 +88,6 @@ export class DatabaseService{
 
 
 
-const service = new DatabaseService()
+const dbService = new DatabaseService()
 
-export default service
+export default dbService
