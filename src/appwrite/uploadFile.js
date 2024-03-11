@@ -36,11 +36,18 @@ export class FileUpload{
             throw error
         }
     }
-    async filePreview(){
+    filePreview(fileID){
         try {
-            return await this.bucket.getFilePreview(conf.appwrite_bucketid, fileID)
+            return this.bucket.getFilePreview(conf.appwrite_bucketid, fileID)
         } catch (error) {
             
+        }
+    }
+    async fileDownload(fileID){
+        try {
+            return await this.bucket.getFileDownload(conf.appwrite_bucketid, fileID)
+        } catch (error) {
+            throw console.error("There is a problem while downloading the file Try again after someTime");
         }
     }
 }
