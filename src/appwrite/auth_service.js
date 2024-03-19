@@ -37,7 +37,7 @@ export class Authwrite{
             throw error
         }
     }
-    async getUserAccount(){
+    async getCurrentUser(){
         try {
             return await this.account.get()
         } catch (error) {
