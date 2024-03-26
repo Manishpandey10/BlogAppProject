@@ -1,10 +1,5 @@
-# React + Vite
+My own Blog web application will be available soon 
+where you can post your own blog articles or update exisiting ones and interact with other user available on the app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
--authService SNIPPET 
---src/appwrite/auth_service.js
+Created using React
+# HANG ON it will be avaiable soon
