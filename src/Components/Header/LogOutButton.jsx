@@ -8,7 +8,7 @@ function LogoutBtn() {
     const logoutHandler = () => {
         authService.logout().then(() => {
             dispatch(logout())
-        })
+        }).catch(error => console.log(`we have a error logging out !!`,error))  
     }
   return (
     <button
