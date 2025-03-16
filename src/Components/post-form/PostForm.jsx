@@ -119,4 +119,8 @@ export default function PostForm({ post }) {
             </div>
         </form>
     );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 81fcd72 (some changes)

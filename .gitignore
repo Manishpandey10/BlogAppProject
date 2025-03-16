@@ -11,6 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+<<<<<<< HEAD
+=======
+.env
+.env.sample
+>>>>>>> 81fcd72 (some changes)
 
 # Editor directories and files
 .vscode/*
@@ -22,5 +27,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+<<<<<<< HEAD
 .env
 src/config/config.js
+=======
+>>>>>>> 81fcd72 (some changes)

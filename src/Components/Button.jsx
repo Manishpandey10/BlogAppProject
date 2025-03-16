@@ -13,4 +13,8 @@ export default function Button({
             {children}
         </button>
     );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 81fcd72 (some changes)

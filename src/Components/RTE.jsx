@@ -51,4 +51,9 @@ export default function RTE({name, control, label, defaultValue =""}) {
 
      </div>
   )
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 81fcd72 (some changes)
