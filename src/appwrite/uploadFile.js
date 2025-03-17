@@ -26,10 +26,6 @@ export class FileUpload{
         }
     }
     async deleteFile(fileID){
-<<<<<<< HEAD
-=======
-        // eslint-disable-next-line no-useless-catch
->>>>>>> 81fcd72 (some changes)
         try {
             return await this.bucket.deleteFile(
                 conf.appwrite_bucketid,
